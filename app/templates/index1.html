@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MedPlus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+  <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='style.css', v=1)}}">
+
+</head>
+<body>
+
+<div class="chat">
+  <div class="chat-title">
+    <h1>Татьяна</h1>
+    <h2>Голосовой помощник</h2>
+    <figure class="avatar">
+      <img src="https://png.pngtree.com/png-vector/20200618/ourlarge/pngtree-female-doctor-design-png-image_2257811.jpg" /></figure>
+  </div>
+  <div class="messages">
+    <div class="messages-content"></div>
+  </div>
+  <div class="message-box">
+    <textarea type="text" class="message-input" placeholder="Написать..."></textarea>
+    <button type="submit" class="message-submit_v">🎤</button>
+      <button type="submit" class="message-submit_v1">█</button>
+    <button type="submit" class="message-submit">Отправить</button>
+  </div>
+
+</div>
+<div class="bg"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+  <script type="text/javascript" src="https://cdn.socket.io/3.1.1/socket.io.min.js"></script>
+  <script src="{{ url_for( 'static', filename='script.js', v=1)}}"></script>
+
+
+</body>
+</html>
